@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rcore Engineering Pvt. Ltd. - Future-Ready Engineering Careers</title>
+  <!-- Tailwind CSS CDN for easy styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-section {
+      background-image: url('https://www.shutterstock.com/s/photos/oil-and-gas');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .card-hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover-effect:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 antialiased">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white shadow-lg fixed w-full z-50">
+    <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center justify-between w-full md:w-auto mb-4 md:mb-0">
+        <a href="#" class="text-3xl font-extrabold tracking-wide text-blue-100">Rcore Engineering</a>
+        <!-- Mobile menu button -->
+        <button id="mobileMenuButton" class="text-white md:hidden focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+      <div id="navigationLinks" class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-8 text-lg font-medium hidden md:flex">
+        <a href="#home" class="hover:text-blue-200 transition-colors duration-200">Home</a>
+        <a href="#about" class="hover:text-blue-200 transition-colors duration-200">About</a>
+        <a href="#courses" class="hover:text-blue-200 transition-colors duration-200">Courses</a>
+        <a href="#contact" class="hover:text-blue-200 transition-colors duration-200">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section h-screen flex items-center justify-center text-center text-white pt-20">
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 p-6 max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+        Shape Your Future in Core Engineering Industries
+      </h1>
+      <p class="text-lg md:text-xl lg:text-2xl mb-8 font-light max-w-2xl mx-auto animate-fade-in-up">
+        Specialized training in Industrial Piping Design & Equipment Drawing for Oil, Gas & Power sectors.
+      </p>
+      <a href="#courses" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-xl shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95 animate-bounce-in">
+        Discover Our Courses
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-blue-900 mb-12">About Rcore Engineering</h2>
+      <div class="flex flex-col lg:flex-row items-center gap-10">
+        <div class="lg:w-1/2 text-left">
+          <p class="text-xl leading-relaxed mb-6 text-gray-700">
+            Rcore Engineering Pvt. Ltd. is a pioneering institution dedicated to nurturing the next generation of engineering talent. We understand the critical demand for skilled professionals in core industries like **Oil & Gas** and **Power Generation**. Our mission is to provide comprehensive, practical, and industry-aligned training that empowers students to excel.
+          </p>
+          <p class="text-xl leading-relaxed text-gray-700">
+            Through our specialized courses and mentorship programs, we bridge the gap between theoretical knowledge and real-world application. We focus on hands-on learning, exposing students to the intricacies of industrial projects and preparing them for successful careers in challenging and rewarding fields. Join Rcore Engineering and become a confident, job-ready engineer.
+          </p>
+        </div>
+        <div class="lg:w-1/2 flex justify-center">
+          <!-- A simple illustrative icon for engineering -->
+          <svg class="w-48 h-48 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79l6.79 6.79v2.93zm9-2.93h-2.93l-6.79-6.79c.58-.13 1.17-.21 1.79-.21 4.08 0 7.44 3.05 7.93 7h-.01z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-20 bg-blue-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-blue-900 mb-12">Our Specialized Courses & Training</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- Industrial Piping Design Course -->
+        <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect flex flex-col justify-between">
+          <svg class="w-16 h-16 text-blue-600 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M13 19V5h-2v14h2zM18 19V9h-2v10h2zM7 19v-6H5v6h2zM2 21h20v2H2v-2z"/>
+          </svg>
+          <h3 class="text-2xl font-semibold text-blue-800 mb-4">Industrial Piping Design</h3>
+          <p class="text-gray-700 mb-6 flex-grow">Master the principles and practices of industrial piping design for Oil, Gas, and Power sectors. Covers layout, routing, stress analysis, and material selection.</p>
+          <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full mt-auto self-center">Enroll Now</a>
+        </div>
+        <!-- Industrial Equipment Drawing Training -->
+        <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect flex flex-col justify-between">
+          <svg class="w-16 h-16 text-blue-600 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99c-2.49 0-4.5-2.01-4.5-4.5S9.51 3.99 12 3.99s4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zm0-7c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z"/>
+          </svg>
+          <h3 class="text-2xl font-semibold text-blue-800 mb-4">Industrial Equipment Drawing</h3>
+          <p class="text-gray-700 mb-6 flex-grow">Gain expertise in creating detailed technical drawings for various industrial equipment, essential for fabrication and installation in core industries.</p>
+          <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full mt-auto self-center">Enroll Now</a>
+        </div>
+        <!-- Practical Internship Programs -->
+        <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect flex flex-col justify-between">
+          <svg class="w-16 h-16 text-blue-600 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14 6V4h-4v2h4zM4 8v11h16V8H4zm14 9H6v-3h12v3zm-4-9H6v-2h8v2z"/>
+          </svg>
+          <h3 class="text-2xl font-semibold text-blue-800 mb-4">Practical Internships</h3>
+          <p class="text-gray-700 mb-6 flex-grow">Immersive programs offering hands-on experience in real industrial projects. Work alongside experienced engineers and apply your knowledge, becoming job-ready.</p>
+          <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full mt-auto self-center">Apply Now</a>
+        </div>
+        <!-- Advanced Engineering Training -->
+        <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect flex flex-col justify-between">
+          <svg class="w-16 h-16 text-blue-600 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5V12c0-.28-.22-.5-.5-.5H4c0-4.41 3.59-8 8-8zm0 15.5c-4.14 0-7.5-3.36-7.5-7.5S7.86 4.5 12 4.5s7.5 3.36 7.5 7.5c0 4.14-3.36 7.5-7.5 7.5z"/>
+          </svg>
+          <h3 class="text-2xl font-semibold text-blue-800 mb-4">Advanced Engineering Training</h3>
+          <p class="text-gray-700 mb-6 flex-grow">Our "Mind Class" program develops advanced technical knowledge, critical thinking, and leadership skills for leading roles in complex engineering environments.</p>
+          <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full mt-auto self-center">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action for Enrollment -->
+  <section class="py-20 bg-blue-800 text-white text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">Ready to Build Your Engineering Future?</h2>
+      <p class="text-xl max-w-3xl mx-auto mb-10">
+        Join Rcore Engineering and unlock your potential with industry-leading training and hands-on experience in the vital Oil, Gas, and Power sectors.
+      </p>
+      <a href="#contact" class="inline-block bg-white text-blue-800 hover:bg-gray-200 font-bold py-3 px-10 rounded-full text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95">
+        Get Started Today!
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center max-w-4xl">
+      <h2 class="text-4xl font-bold text-blue-900 mb-12">Connect With Us</h2>
+      <p class="text-xl text-gray-700 mb-8">
+        Have questions about our courses, internships, or how Rcore Engineering can help shape your career? Reach out to us directly or connect on social media!
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+        <!-- Direct Contact Info -->
+        <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center">
+          <h3 class="text-2xl font-semibold text-blue-800 mb-4">Direct Contact</h3>
+          <p class="text-lg mb-3"><strong>Email:</strong> <a href="mailto:info@rcoreengineering.com" class="text-blue-700 hover:underline">rcore.engg@gmail.com</a></p>
+          <p class="text-lg mb-3"><strong>Phone:</strong> <a href="tel:+918838344407" class="text-blue-700 hover:underline">+91 88383 44407</a></p>
+          <p class="text-lg"><strong>Location:</strong> Soundarya Nagar, Sembakkam, Velachery Main Road, Tambaram East, Chennai, Tamil Nadu, India</p>
+        </div>
+        <!-- Social Media Links -->
+        <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center">
+          <h3 class="text-2xl font-semibold text-blue-800 mb-4">Connect on Social Media</h3>
+          <div class="flex justify-center gap-8">
+            <a href="https://wa.me/918838344407" target="_blank" class="text-green-500 hover:text-green-600 transition-colors duration-200" aria-label="WhatsApp">
+              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.5 3.42 1.45 4.86l-1.01 3.7c-.15.54.34 1.05.89.92l3.8-1.03c1.37.75 2.92 1.15 4.58 1.15 5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.91-9.91zm.04 18.01c-1.48 0-2.91-.4-4.17-1.15l-.29-.17-3.05.83.84-3.04-.18-.3c-.94-1.57-1.44-3.37-1.44-5.21 0-4.52 3.67-8.19 8.19-8.19s8.19 3.67 8.19 8.19-3.67 8.19-8.19 8.19zm4.51-6.18c-.25-.12-.87-.43-.99-.48-.12-.05-.26-.07-.37.05-.11.12-.43.48-.52.58-.08.1-.17.12-.31.07-.13-.05-.55-.21-1.05-.65-.38-.34-.64-.57-.85-.94-.2-.37-.02-.35.1-.46.09-.09.2-.23.26-.34.06-.11.03-.21-.02-.3-.05-.1-.37-.89-.51-1.22-.14-.32-.29-.27-.37-.28-.08-.02-.17-.02-.26-.02-.1 0-.25.04-.39.18-.14.15-.53.52-.53 1.27 0 .75.54 1.47.62 1.57.08.11 1.06 1.61 2.57 2.27 1.5.65 1.5.46 1.77.43.27-.03.87-.36.99-.71.12-.35.12-.65.08-.71z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100063716363851" target="_blank" class="text-blue-700 hover:text-blue-800 transition-colors duration-200" aria-label="Facebook">
+              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.24.195 2.24.195v2.46h-1.26c-1.247 0-1.637.77-1.637 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/rcore_eng/" target="_blank" class="text-pink-600 hover:text-pink-700 transition-colors duration-200" aria-label="Instagram">
+              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.772 1.662 4.92 4.914.057 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.252-1.662 4.772-4.914 4.92-1.266.057-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.772-1.662-4.92-4.914-.057-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148 3.252 1.662 4.772 4.914-4.92 1.266-.057 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.623-7.017 7.008-.058 1.28-.072 1.689-.072 4.948 0 3.259.014 3.668.072 4.948.234 4.385 2.657 6.818 7.017 7.017 1.28.058 1.689.072 4.948.072s3.668-.014 4.948-.072c4.354-.236 6.78-2.668 7.017-7.022.058-1.28.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.236-4.359-2.66-6.782-7.022-7.017-1.28-.058-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.44-.645 1.44-1.44s-.645-1.44-1.44-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 text-center">
+    <div class="container mx-auto px-6">
+      <p>&copy; 2025 Rcore Engineering Pvt. Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle mobile menu visibility
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const navigationLinks = document.getElementById('navigationLinks');
+<!-- ...existing code... -->
+<div class="lg:w-1/2 flex justify-center">
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+       alt="Engineering students in training"
+       class="rounded-xl shadow-lg w-80 h-80 object-cover" />
+</div>
+<!-- ...existing code... -->
+    mobileMenuButton.addEventListener('click', () => {
+      navigationLinks.classList.toggle('hidden');
+    });
+<!-- ...existing code... -->
+<div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect flex flex-col justify-between">
+  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+       alt="Piping design blueprint"
+       class="rounded-md mb-4 w-20 h-20 object-cover mx-auto" />
+  <!-- ...existing SVG/icon and content... -->
+<!-- ...existing code... -->
+    // Close mobile menu when a link is clicked
+    navigationLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!navigationLinks.classList.contains('hidden')) {
+          navigationLinks.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
